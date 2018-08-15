@@ -31,7 +31,7 @@ The activities in class will sometimes require that you have
 a computer with you. You will require access to the network
 and often access to a Unix-like computing environment. (Students using
 an operating system not based on Unix may like to use a remote Unix-like host,
-[VirtualBox](https://www.virtualbox.org/wiki/Downloads), or a cloud environment
+[VirtualBox](https://www.virtualbox.org/wiki/Downloads), [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10), or a cloud environment
 like [Cloud9](http://c9.io).)
 
 ### Quizzes
