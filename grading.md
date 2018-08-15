@@ -29,4 +29,4 @@ There is no final exam.
 
 Letter grades will be assigned at the end of the course based
 on the [Yale grading policies](https://www.dropbox.com/s/ux93jd8ea2485uw/Grading%20Scales%20at%20Yale.doc?dl=0).
-The students enrolled in MGT659 and CPSC213 will be graded independently.
+The students enrolled in MGT656 and MGT660 will be graded independently.
