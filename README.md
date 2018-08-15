@@ -12,8 +12,8 @@ class: Yale's MGT656/MGT660 in the Spring of 2018.
 | Enrollment              | Open to all students from all schools at Yale                             |
 | MGT660 Meeting Location | Tu/Th 1:00-2:20pm 4230 [Evans](https://map.yale.edu/place/building/EVANS) |
 | MGT656 Meeting Location | Tu/Th 2:40-4:00pm 4400 [Evans](https://map.yale.edu/place/building/EVANS) |
-| MGT660 website          | https://660.mba                                                           |
-| MGT656 website          | https://656.mba                                                           |
+| MGT660 website          | http://660.mba                                                            |
+| MGT656 website          | http://656.mba                                                            |
 
 Software is a ubiquitous component of the increasingly technology-driven
 economy. Or, "_Software is eating the world_" in the words of Marc
