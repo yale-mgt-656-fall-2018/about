@@ -17,12 +17,11 @@ various services that we will use during the semester including
 [Cloud9](https://c9.io/). These assignments will be completed
 individually and will be submitted through the class website.
 
-## Submitting through the class website
+## Assignment instructions
 
-On the class website there is an "Assignments" link. From there, you
+On the class website (either http://660.mba or http://656.mba) there is an "Assignments" link. From there, you
 can browse individual assignments including instructions for completing
-and submitting each assignment. Most persons will want to submit their
-assignments through the class website.
+and submitting each assignment.
 
 ## Submitting through the class API
 
