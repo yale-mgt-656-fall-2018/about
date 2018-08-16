@@ -155,25 +155,6 @@ student groups are welcome to fork. Students who start with that code
 may be likely to accrue better project grades, if only because they are likely
 to get customer traction more quickly.
 
-### Business model
-
-Your computer science education enables you to build fantastic software for any
-number of people and uses. In order for us to have a addressable
-set of knowledge and a common language for all participants in this course, it
-behooves us to
-restrict the "business models" that are allowed for projects Your
-project should
-
-- have the plausible potential for at least 1 million users
-  within a few years of launch;
-- be plausibly sustainable (it may be nonprofit or
-  for-profit, in either case a path to sustainability must be articulated that
-  relies on users, not donors or investors).
-
-We would like to not have this restriction. Alas, an over diversity of
-business models would challenge a course that is already spread thin across
-too many topics.
-
 ## Textbook
 
 There is no textbook for the course. Readings will on Canvas or otherwise
