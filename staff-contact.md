@@ -6,3 +6,4 @@
 | Griffin Solot-Kehl | TA | griffin.solot-kehl@yale.edu | WingofaGriffin      |
 | Minkyung "MK" Kim | TA | mk.kim@yale.edu | mkkim91      |
 | John Amadeo Daniswara | TA | johnamadeo.daniswara@yale.edu | johnamadeo |
+| Julie Kim | TA | julie.j.kim@yale.edu | jknobutreally |
