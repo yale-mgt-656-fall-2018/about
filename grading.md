@@ -1,31 +1,48 @@
 ## Grading
 
-The course includes homework assignments,
-quizzes, a group project, and participation. These are the only works
-upon which students are graded.
+The course includes homework assignments, quizzes, a group project,
+exams, and participation. These are the only works upon which
+students are graded.
 
-Grades will be awarded as **roughly** as indicated below. This distribution
-**will definitely change** over the course of the semester: we will skip
-certain quizzes, certain assignments may become worth more or less,
-assignments may be added, and
-generally, the instructors will be constantly tweaking our class to maximize
-our learning and enjoyment. At the
-end of the semester, we suspect the grades will be roughly as follows.
+Grades will be awarded as **roughly** as indicated below. This
+distribution **will definitely change** over the course of the
+semester: we will skip certain quizzes, certain assignments may
+become worth more or less, assignments may be added, and generally,
+the instructors will be constantly tweaking our class to maximize
+our learning and enjoyment. At the end of the semester, we suspect
+the grades will be roughly as indicated below.
 
-- Individual assignments: roughly 210 points (~25%). These are the technical assignments you will complete, which are front-loaded at the beginning of the course.
-- Quizzes: 13pts each. Expect roughly 20 over the course of the semester.
-  Your lowest five quizzes will be dropped automatically and the total contribution
-  of quizzes to the points in the class should be roughly 200pts (~23.5%).
-  See the section on [quizzes](quizzes.md).
-- Class Project: roughly 215pts (~25.5%) over the course of the semester, including the final presentation.
-- Two exams: 60pts (~7%) each.
-- Class participation: roughly 100pts (~12%). Class participation is divided roughly
-  equally between in-class participation, online participation through
-  the class Q&A system. The TAs will keep track of participation in class.
-  _It is your responsibility to ensure the TAs record that you attended class
-  and that you contributed._
+|           slug           | is_team |       closed_at        | points_possible|
+|--------------------------|---------|------------------------|----------------|
+| dash-project-1           | f       | 2018-09-07 04:00:00+00 |              30|
+| dash-project-2           | f       | 2018-09-12 04:00:00+00 |              30|
+| javascript               | f       | 2018-09-21 04:00:00+00 |              60|
+| version-control          | f       | 2018-09-26 04:00:00+00 |              30|
+| server-side-apps-1       | f       | 2018-10-03 04:00:00+00 |              30|
+| server-side-apps-2       | f       | 2018-10-08 04:00:00+00 |              30|
+| exam-1                   | f       | 2018-10-11 04:00:00+00 |             125|
+| team-selection           | f       | 2018-10-24 04:00:00+00 |              20|
+| project-sprint-1         | t       | 2018-11-02 04:00:00+00 |              25|
+| project-sprint-2         | t       | 2018-11-10 04:00:00+00 |              25|
+| project-sprint-3         | t       | 2018-11-17 04:00:00+00 |              25|
+| exam-2                   | f       | 2018-11-30 04:00:00+00 |             125|
+| project-sprint-4         | t       | 2018-12-05 04:00:00+00 |              25|
+| class-participation      | f       | 2018-12-13 04:00:00+00 |             150|
+| project-final-submission | t       | 2018-12-14 04:00:00+00 |             175|
 
-There is no final exam.
+
+In addition, there will be roughly 20 quizzes, each worth about 13 points.
+Therefore, the total number of points in the class is roughly 1165.
+
+
+**PLEASE NOTICE** the following. First, the "closed_at" dates (due dates)
+shown above is not authoritative
+and should not be used for planning your semester. The due dates could
+change and so you ought to refer to the class website, instead of
+the table above. Second, the "is_team" column is a boolean that has the value true
+(t) when an assignment is submitted and graded once per team. On those
+assignments, each team member will received an identical score.
+Finally, there is no final exam.
 
 Letter grades will be assigned at the end of the course based
 on the [Yale grading policies](https://www.dropbox.com/s/ux93jd8ea2485uw/Grading%20Scales%20at%20Yale.doc?dl=0).
