@@ -81,7 +81,7 @@ the course with the following values.
 These are bold goals and challenging to accomplish in the brief time
 allotted to us. Our greatest concern is that the technology component
 will be a barrier for some students. To ensure that this is not the
-case, we recorded numerous videos in which the instructors show how
+case, we will record numerous videos in which the instructors show how
 to complete the homework and class project.
 In these videos, we discuss the
 different ways in which technical goals can be achieved, explicitly
