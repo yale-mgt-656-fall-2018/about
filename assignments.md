@@ -23,6 +23,25 @@ On the class website (either http://660.mba or http://656.mba) there is an "Assi
 can browse individual assignments including instructions for completing
 and submitting each assignment.
 
+## Submitting through the class website
+
+You can submit each of the assignments through your class website.
+However, assignments can only be submitted if 1) they are not labeled
+as "draft"; and, 2) the current time is before the assignment is
+"closed" (or due). With rare exception, assignments will require
+you to submit one or more "fields"---a URL, some text, etc. Most
+often, these will be URLs pointing to web applications that you build
+online and your Git repositories on GitHub. After the assignment is
+closed (due), the instructors will grade the assignment using the
+information you submitted.
+
+When you submit your assignment, please take care that you submit
+the correct information without typos. The class website will happily
+suggest "foo.com" as your submission intead of the URL to your Git repo.
+Many of the assignments will be graded in an automated fashion and 
+so a typo can have a catestrophic effect on your grade for an assignment.
+
+
 ## Submitting through the class API
 
 You'll submit assignments through the class API. The relevant API
