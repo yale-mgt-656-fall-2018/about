@@ -1,5 +1,6 @@
 # The class project
 
+## General description
 You will work together
 on a class project: a web application for posting events and RSVPing
 for those events, similar to Eventbrite (but way worse). The class project is
@@ -15,14 +16,21 @@ by the instructors will, every day, test the behavior of your
 application to see what fraction of the specifications have been
 completed.
 
-The functionality of your class project will be graded in an automated
-fashion and I'll give you the testing code in advance, so you know
-how you're doing on the project at any point. Once it is released,
-you'll want to check often for updates to the testing code---it
-will change as we add requirements during the course of the project
-and fix bugs, which are inevitable. The requirements for the project
-are described in the README in the testing code and therein you'll
-also find instructions for running the testing code.
+## Project grading
+
+The project will be graded in five separate parts: four sprint reports
+and one final report. The project reports are short, perhaps 2-3 pages,
+and they detail the progress the team is making. The final report 
+grade includes two components, the "regular report" grade and the 
+grade from the automated tests. The automated tests will quantify the
+degree to which your website (the Eventbrite clone) conforms to our
+specifications. This code will be made available to you before you
+begin the project.
+
+All students on the same team will receieve an identical grade for
+each of the project-related assignments.
+
+## More to come...
 
 As this git commit, we're still finalizing the project. We'll update
 this documentation soon.
