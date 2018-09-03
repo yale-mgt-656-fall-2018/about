@@ -2,32 +2,82 @@
 
 Most of the class meetings include pre-class reading and a
 quiz that covers that reading. You will take those quizzes
-using the [class API](https://www.cpsc213.io/openapi/).
-(We are working on adding quiz-taking to the class website
-and we'll have it done soon. In the meantime, we apologize
-for your suffering and hope that, at the minimum, it is 
-character building.)
+either via your class website (http://656.mba or http://660.mba)
+or using the class API. In this semester, each quiz has a
+duration of 20 minutes. Once you begin a quiz, you can change
+your answers until either 20 minutes after you began the
+quiz, or the closing time of the quiz, which is usually the
+beginning of class. So, if you start a quiz five minutes
+prior to class, you will only have five minutes to submit
+the answers to the quiz questions! The quizzes are graded
+only after the quiz closes.
 
-To use the API, there are a few steps:
+## Submitting the quiz using the class website
 
-1. Get your [JSON Web Token](https://jwt.io/introduction/) for the class API. This identifies you
-   and allows you interact with the API (though, there are some things you can do anonymously).
+The website for class includes a link to list of the 
+class "meetings"  and links to the description of 
+each individual class. For example, the description
+of our Sept 6th meeting in 656 is at https://www.656.mba/#meetings/agile-and-scrum-2.
+
+Information about the quiz for that meeting is included
+at the bottom, though, that information changes appearance
+depending on the state of the quiz. A button that says
+"Begin Quiz" will appear if you can take the the quiz.
+You can take the quiz if all of the following are true:
+
+* The quiz is not labeled as "draft". Draft means the teaching
+  staff are stil working on the quiz questions.
+* The current time is after the quiz is "open". Quizzes usually
+  open five days before the meeting/lecture to which the quiz
+  corresponds.
+* The current time is not after the quiz is "closed". Quizzes
+  usually close when the meeting/lecture to which the quiz 
+  corresponds begins.
+* You did not previously take the quiz or you already started
+  the quiz, but your time to take the quiz is not expired.
+  All quizzes this semster will last 20 minutes.
+
+Once you click "Begin Quiz", you will see a list of multiple
+choice questions displayed in an HTML form. For each question,
+you should select the options you desire and then click 
+"Save Answers" at the bottom of the page. Unless there is an
+error, the options that you selected will be labeled as "saved",
+so that you have visual confirmation.
+
+## Submitting a quiz using the class API
+
+To use the API, there are a few steps, each of which is described in more detail below:
+
+1. Get your [JSON Web Token](https://jwt.io/introduction/) for the
+   class API. 
 2. Find the next class session.
 3. Find the quiz corresponding to that class.
 4. Create a quiz submission.
 5. Show the quiz questions and choices.
 6. Submit your choice for each question.
 
-You can do this using any tools you like. For example, it is easy to write a shell, JavaScript, Ruby, or Python script for interacting with the class API. You can also use programs like Postman, which give you a GUI for interacting with APIs. Here, I am going to show you to how do this all "by hand" on the command line using CURL, a common command line HTTP client you will find available on most operating systems. Using CURL, your CLI session will end up looking like [this](https://asciinema.org/a/0RwxP8TNQWHT9Bt6ZTPUM36gV).
+You can do this using any tools you like. For example, it is easy
+to write a shell, JavaScript, Ruby, or Python script for interacting
+with the class API. You can also use programs like Postman, which
+give you a GUI for interacting with APIs. Here, I am going to show
+you to how do this all "by hand" on the command line using CURL, a
+common command line HTTP client you will find available on most
+operating systems. Using CURL, your CLI session will end up looking
+like [this](https://asciinema.org/a/0RwxP8TNQWHT9Bt6ZTPUM36gV).
+(That demo was for a previous class, CPSC213, but the procedure is
+roughly the same.)
+
 
  ## Get your JWT
 
- You should log into the [class website](https://www.cpsc213.io/) and then visit
- your [dashboard](https://www.cpsc213.io/#/dashboard), which shows a few pieces of
- information, including a freshly generated JWT. (The JWT will expire in two days
- or so.) You want to copy this value. If you're on a
- [Posix compliant](https://stackoverflow.com/questions/1780599/i-never-really-understood-what-is-posix)
+ You should log into the class website
+ and then visit your "dashboard",
+ which shows a few pieces of information, including a freshly
+ generated JWT. (The JWT will expire in two days or so.) You want
+ to copy this value. If you're on a [Posix
+ compliant](https://stackoverflow.com/questions/1780599/i-never-really-understood-what-is-posix)
  shell, like Bash, which is likely, you can do this as follows:
+
 
  ```
  export JWT="eyJhbGciOiJIUzI1NiIsInR5c..."
@@ -39,16 +89,16 @@ You can do this using any tools you like. For example, it is easy to write a she
  2. Find the next class session.
 
  ```
- curl 'https://www.cpsc213.io/rest/meetings'
+ curl 'https://$CLASS_FQDN/rest/meetings'
  ```
 
- That will dump a lot of information, and you don't need it all. You're
+ where `$CLASS_FQDN` is the fully qualified domain name of your class. That will dump a lot of information, and you don't need it all. You're
  probably only interested in the *next* few classes. So, add a query as 
  follows
 
 
  ```
- curl 'https://www.cpsc213.io/rest/meetings&begins_at=gt.2018-01-17&limit=3'
+ curl 'https://$CLASS_FQDN/rest/meetings&begins_at=gt.2018-01-17&limit=3'
  ```
 
  This says, "get the first three classes with `begins_at` greater than 2018-01-17".
@@ -58,7 +108,7 @@ You can do this using any tools you like. For example, it is easy to write a she
  PostgREST documentation](https://postgrest.com/en/latest/api.html).
 
  ```
- curl 'https://www.cpsc213.io/rest/meetings?order=begins_at&limit=3&begins_at=gt.2018-01-17&select=id,title,slug,begins_at'
+ curl 'https://$CLASS_FQDN/rest/meetings?order=begins_at&limit=3&begins_at=gt.2018-01-17&select=id,title,slug,begins_at'
  ```
 Your output should look something like this
 
@@ -110,13 +160,13 @@ which you can access using syntax like `$JWT` as you could in Bash.
 To get a list of quizzes, do
 
 ```
-curl -H "Authorization: Bearer $JWT" 'https://www.cpsc213.io/rest/quizzes'
+curl -H "Authorization: Bearer $JWT" 'https://$CLASS_FQDN/rest/quizzes'
 ```
 
 To get the quiz for this particular class, do the following
 
 ```
-curl -H "Authorization: Bearer $JWT" 'https://www.cpsc213.io/rest/quizzes?meeting_id=eq.3'
+curl -H "Authorization: Bearer $JWT" 'https://$CLASS_FQDN/rest/quizzes?meeting_id=eq.3'
 ```
 
 Among the fields, you should see an `open_at` field, which tells
@@ -165,13 +215,13 @@ the `/rest/quiz_submissions` API endpoint. We can submit in either
 In JSON format, as follows:
 
 ```
-curl -H "Authorization: Bearer $JWT" -X POST -H "Content-Type: application/json" -d '{"quiz_id": 1}' 'https://www.cpsc213.io/rest/quiz_submissions'
+curl -H "Authorization: Bearer $JWT" -X POST -H "Content-Type: application/json" -d '{"quiz_id": 1}' 'https://$CLASS_FQDN/rest/quiz_submissions'
 ```
 
 In urlencoded form format, as follows:
 
 ```
-curl -H "Authorization: Bearer $JWT" -X POST -d 'quiz_id=1' 'https://www.cpsc213.io/rest/quiz_submissions'
+curl -H "Authorization: Bearer $JWT" -X POST -d 'quiz_id=1' 'https://$CLASS_FQDN/rest/quiz_submissions'
 ```
 
 
@@ -183,7 +233,7 @@ along with the mutliple choice options for each question, use a command
 like below:
 
 ```
-curl -H "Authorization: Bearer $JWT" 'https://www.cpsc213.io/rest/quiz_questions?quiz_id=eq.1&select=id,body,quiz_question_options(id,body)'
+curl -H "Authorization: Bearer $JWT" 'https://$CLASS_FQDN/rest/quiz_questions?quiz_id=eq.1&select=id,body,quiz_question_options(id,body)'
 ```
 
 If you pipe that into jq, or some other JSON-formatting tool, you should
@@ -255,10 +305,10 @@ with `id` 1, the correct options are 1, 2, 3, and 5. To store my selections
 I would do the following.
 
 ```
-curl -H "Authorization: Bearer $JWT" -X POST -d 'quiz_question_option_id=1' 'https://www.cpsc213.io/rest/quiz_answers'
-curl -H "Authorization: Bearer $JWT" -X POST -d 'quiz_question_option_id=2' 'https://www.cpsc213.io/rest/quiz_answers'
-curl -H "Authorization: Bearer $JWT" -X POST -d 'quiz_question_option_id=3' 'https://www.cpsc213.io/rest/quiz_answers'
-curl -H "Authorization: Bearer $JWT" -X POST -d 'quiz_question_option_id=5' 'https://www.cpsc213.io/rest/quiz_answers'
+curl -H "Authorization: Bearer $JWT" -X POST -d 'quiz_question_option_id=1' 'https://$CLASS_FQDN/rest/quiz_answers'
+curl -H "Authorization: Bearer $JWT" -X POST -d 'quiz_question_option_id=2' 'https://$CLASS_FQDN/rest/quiz_answers'
+curl -H "Authorization: Bearer $JWT" -X POST -d 'quiz_question_option_id=3' 'https://$CLASS_FQDN/rest/quiz_answers'
+curl -H "Authorization: Bearer $JWT" -X POST -d 'quiz_question_option_id=5' 'https://$CLASS_FQDN/rest/quiz_answers'
 ```
 
 (I hope that you see how "scriptable" this is. If you don't write a script, it will
@@ -267,17 +317,9 @@ instead be repetitive!)
 If you accidently selected an option, you can delete it easily, as such
 
 ```
-curl -H "Authorization: Bearer $JWT" -X DELETE 'https://www.cpsc213.io/rest/quiz_answers?quiz_question_option_id=eq.4'
+curl -H "Authorization: Bearer $JWT" -X DELETE 'https://$CLASS_FQDN/rest/quiz_answers?quiz_question_option_id=eq.4'
 ```
 
-As you can see in the [API documentation for the `quiz_answers` endpoint](https://www.cpsc213.io/openapi/#/quiz_answers), the `quiz_answer` requires
+As you can see in the [API documentation for the `quiz_answers` endpoint](https://$CLASS_FQDN/openapi/#/quiz_answers), the `quiz_answer` requires
 a `quiz_id` and a `user_id`, but these can be filled in automatically by
 the database if you omit them.
-
-## Closing thoughts
-
-Pay attention to the quiz `durations`---you have a limited time to complete
-your quiz once you create a quiz submission. All you need to do is use the
-API to select your desired answers. We will *likely* create a web interface
-for this in the coming weeks. In the meantime, you can use [this shell script](https://gist.github.com/jacobbendicksen/b2845b0c63e279c086eeabd67daf55f8)
-written by the TAs, though we make no promises as to its functionality.
