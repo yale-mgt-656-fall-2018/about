@@ -44,6 +44,18 @@ the table above. Second, the "is_team" column is a boolean that has the value tr
 assignments, each team member will received an identical score.
 Finally, there is no final exam.
 
+Participation is graded on a per-class basis and can be one
+of the following values: 'absent', 'attended', 'contributed', or 'led'.
+If you
+attend all classes during the semester, you should receive
+roughly 50% of the participation component for the course.
+These are worth 0, 2.5, 3.5, and 5 points, respectively. Your
+maximum participation grade will be roughly 150pts.  Because it is 
+impossible to accumulate 150 points in our 26 class meetings,
+we will be curving the participation grades: the person with
+the maximum participation grade will receive 150pts and all
+other student grades will be scaled proportionately.
+
 Letter grades will be assigned at the end of the course based
 on the [Yale grading policies](https://www.dropbox.com/s/ux93jd8ea2485uw/Grading%20Scales%20at%20Yale.doc?dl=0).
 The students enrolled in MGT656 and MGT660 will be graded independently.

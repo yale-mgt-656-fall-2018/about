@@ -64,14 +64,9 @@ I believe the strongest arguments, from your perspective as a student, for frequ
 
 Your participation in class improves the learning experience
 for everybody: me, your colleagues, and yourself. Participation
-is [recorded](https://github.com/kljensen/yelukerest/blob/master/db/src/data/yeluke/engagement.sql) on a per-class basis by the teaching staff. If you
-attend all classes during the semester, you should receive
-roughly 50% of the participation component for the course.
-Participation is graded on a per-class basis and can be one
-of the following values: 'absent', 'attended', 'contributed', or 'led'.
-These are worth 0, 2.5, 3.5, and 5 points, respectively. Your
-maximum participation grade will be roughly 100pts. See the
-[grading notes](grading.md) for more context.
+is [recorded](https://github.com/kljensen/yelukerest/blob/master/db/src/data/yeluke/engagement.sql) on a per-class basis by the teaching staff.
+See the
+[grading notes](grading.md) for more information.
 
 ### The class project
 
