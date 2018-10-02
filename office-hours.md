@@ -11,7 +11,7 @@ Feel free to send an email if these times do not work for you.
 | Person      | Hours                                                                    |Location|
 | ----------- | ------------------------------------------------------------------------ |--------|
 | Kyle Jensen | TuW 9:30-10:30AM| L400 [Evans Hall](https://map.yale.edu/place/building/EVANS) (Basement)|
-| MK Kim  | Fall 1 TuTh 1-2pm/ Fall 2 TuTh 11-12pm | Evans Hall Cafe |
+| MK Kim  | Fall 1 TuTh 1-2pm (10/4 canceled) / Fall 2 TuTh 11-12pm | Evans Hall Cafe |
 | Julie Kim | Th 9-10am in Fall 1 (9/27 canceled) | Evans Hall Cafe |
 | John Amadeo Daniswara | Tu 4-5pm, Sat 1-2.30pm (except 15 Sept) | Evans Hall Cafe |
 | Griffin Solot-Kehl | TuTh 6-7pm| [Sterling Memorial Library CTL](https://ctl.yale.edu/Directions) |
