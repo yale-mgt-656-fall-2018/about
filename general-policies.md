@@ -4,14 +4,14 @@
 
 ## Lectures
 
-This course often uses a [flipped classroom](http://en.wikipedia.org/wiki/Flipped_classroom),
-meaning that you will learn
-a great deal of material prior to class and our time in the classroom,
-together is spent
+This course often uses a [flipped
+classroom](http://en.wikipedia.org/wiki/Flipped_classroom), meaning
+that you will learn a great deal of material prior to class and our
+time in the classroom, together is spent
 
 - summarizing the most important points;
 - discussing the material; and,
-- applying the material through activites, homework, or the class project.
+- applying the material through activities, homework, or the class project.
 
 Nearly every lecture has a set of required readings that you
 will need to complete before class. Often, those readings will
@@ -32,7 +32,9 @@ a computer with you. You will require access to the network
 and often access to a Unix-like computing environment. (Students using
 an operating system not based on Unix may like to use a remote Unix-like host,
 [VirtualBox](https://www.virtualbox.org/wiki/Downloads), [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10), or a cloud environment
-like [Cloud9](http://c9.io).)
+like [Cloud9](http://c9.io).) Kyle will provide (and pay for) Cloud9 environments
+for students who would like a remote, cloud-based development environment
+and virtual machine.
 
 ### Quizzes
 
