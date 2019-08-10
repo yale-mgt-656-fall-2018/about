@@ -105,7 +105,7 @@ following sections.
 - [Class project](class-project.md)
 - [Quizzes (why we have them and how to submit them)](quizzes.md)
 - [Assignment submission](assignments.md)
-- [Scripts (for interacting with the class API)](scripts)
+- [Setting up your development environment](dev-environment.md)
 
 ## How to use this document/repo
 
