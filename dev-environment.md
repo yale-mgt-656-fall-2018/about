@@ -33,7 +33,11 @@ started on mac, windows, and Cloud9.
 2. Install git. It is likely git is already installed on your
    mac. Open your terminal and type `git --version`.  If you
    see version information, you've got git. If you see 
-   "command not found" or similar, you don't. To install git,
+   "command not found" or similar, you don't.
+   You might also be prompted to install the Mac OSX Command
+   Line tools. If you are prompted to do so, you should install
+   them, then you'll have git. (See [this guide](https://hackernoon.com/install-git-on-mac-a884f0c9d32c).)
+   To install git,
    follow [these instructions](https://www.atlassian.com/git/tutorials/install-git)
    or [these instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
    You might also like the [GitHub git GUI](https://desktop.github.com/),
