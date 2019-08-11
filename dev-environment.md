@@ -30,14 +30,14 @@ started on mac, windows, and Cloud9.
 ### Mac
 
 1. [Install Go](https://golang.org/doc/install)
-* Or use Homebrew:
-    * `brew update`
-    * `brew install golang`
+    * Or use Homebrew:
+        * `brew update`
+        * `brew install golang`
 2. [Setup your workspace](https://www.callicoder.com/golang-installation-setup-gopath-workspace/)
-* Go requires you to organize your code in a specific way, and all your code should be in one workspace (directory). Additionally, you should create the subdirectories `src` `bin` and `pkg` in this workspace. You can run the following commands to help setup your workspace: 
-    * `echo 'export GOPATH=$HOME/where_you_keep_your_code/go-workspace' >>~/.bash_profile`
-    * `source ~/.bash_profile`
-    * `mkdir -p $GOPATH $GOPATH/src $GOPATH/pkg $GOPATH/bin`
+    * Go requires you to organize your code in a specific way, and all your code should be in one workspace (directory). Additionally, you should create the subdirectories `src` `bin` and `pkg` in this workspace. You can run the following commands to help setup your workspace: 
+        * `echo 'export GOPATH=$HOME/where_you_keep_your_code/go-workspace' >>~/.bash_profile`
+        * `source ~/.bash_profile`
+        * `mkdir -p $GOPATH $GOPATH/src $GOPATH/pkg $GOPATH/bin`
 3. Install git. It is likely git is already installed on your
    mac. Open your terminal and type `git --version`.  If you
    see version information, you've got git. If you see 
@@ -59,7 +59,7 @@ started on mac, windows, and Cloud9.
 
 1. [Install Go](https://golang.org/doc/install)
 2. [Setup your workspace](https://www.callicoder.com/golang-installation-setup-gopath-workspace/)
-* Go requires you to organize your code in a specific way, and all your code should be in one workspace (directory). Additionally, you should create the subdirectories `src` `bin` and `pkg` in this workspace.
+    * Go requires you to organize your code in a specific way, and all your code should be in one workspace (directory). Additionally, you should create the subdirectories `src` `bin` and `pkg` in this workspace.
 3. Install git. Follow
    [these instructions](https://www.atlassian.com/git/tutorials/install-git)
    or [these instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
