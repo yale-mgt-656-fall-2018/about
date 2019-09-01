@@ -1,7 +1,7 @@
 # About this class
 
 This repo tracks information and policies for our
-class: Yale's MGT656/MGT660 in the Spring of 2018.
+class: Yale's MGT656/MGT660 in the Fall of 2019.
 
 ## Overview
 
@@ -35,16 +35,18 @@ The course is most appropriate for students who will have leadership
 roles in industries being disrupted by technology, or launching new
 ventures with a software or web component.
 
-Usually, 656 has about 65 students and 660 about 30.
-Most spots are reserved for students enrolled in the
-Yale School of Management. These students may bid on the course using the SOM
-bidding system. The remaining spots in the course are open to the
-non-SOM students, including Yale College, who
-may shop the course. (In the case of excess demand, the best performing
-students shopping will be invited to stay in the course.) Officially
-registering for Yale College students will require a form that
-is signed by your dean and Kyle Jensen. You can print these forms
-online (somewhere).
+Usually, 656 has about 65 students and 660 about 25. Most spots
+are reserved for students enrolled in the Yale School of Management.
+These students may bid on the course using the SOM bidding system.
+The remaining spots in the course are open to the non-SOM students,
+including Yale College, who may shop the course. (In the case of
+excess demand, the best performing students shopping will be invited
+to stay in the course. Performance will be measured by a mix of
+attendance and grades on assignments. If demand exceeds capacity,
+I will make an announcement in class providing more details.)
+Officially registering for Yale College students will require a
+form that is signed by your dean and Kyle Jensen. You can print
+these forms online (somewhere).
 
 ## Course Philosophy
 
@@ -54,8 +56,8 @@ the course with the following values.
 
 - **You will actually write code**. If you are going to manage developers,
   you need to understand what it is like to write code. You need to
-  speak their language, understand their struggles, and understand
-  some computer science basics.
+  speak their language, understand their struggles, understand how tech
+  products are built, and understand some fundamentals of computer science.
 
 - **You will use modern best-practices for managing software development**.
   There are many ways in which one can organize
@@ -74,9 +76,10 @@ the course with the following values.
   [CSS](http://en.wikipedia.org/wiki/Cascading_Style_Sheets). Delivering software via the
   web is a common choice because browsers are ubiquitous: they exist
   on every phone, tablet, laptop, and computer. On the server side we
-  will use [Node.js](http://nodejs.org/). Node is "lightweight and efficient, perfect for
-  data-intensive real-time applications that run across distributed
-  devices."
+  will use [Go](https://golang.org/), a programming language developed
+  by Google. Go is a popular, "modern" alternative to
+  nodejs, python, and ruby for web application development. Like all
+  languages, it is imperfect. It's a reasonable choice for this course.
 
 These are bold goals and challenging to accomplish in the brief time
 allotted to us. Our greatest concern is that the technology component
@@ -102,7 +105,7 @@ following sections.
 - [Class project](class-project.md)
 - [Quizzes (why we have them and how to submit them)](quizzes.md)
 - [Assignment submission](assignments.md)
-- [Scripts (for interacting with the class API)](scripts)
+- [Setting up your development environment](dev-environment.md)
 
 ## How to use this document/repo
 
